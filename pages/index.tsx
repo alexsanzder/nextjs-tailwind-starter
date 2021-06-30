@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import ThemeSwitch from "@/components/ThemeSwitch";
+
 export default function Home() {
     return (
-        <div className="relative overflow-hidden bg-white">
+        <div className="dark:bg-gray-900 relative overflow-hidden bg-white">
             <Head>
                 <title>Create Next App</title>
                 <meta
@@ -16,7 +18,7 @@ export default function Home() {
                 <main className="max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 px-4 mx-auto mt-10">
                     <div className="sm:text-center lg:text-left">
                         <h1 className="sm:text-5xl md:text-6xl text-4xl font-extrabold tracking-tight text-gray-900">
-                            <span className="xl:inline block">
+                            <span className="xl:inline dark:text-gray-100 block">
                                 NextJS, Tailwind, Typescript
                             </span>{" "}
                             <span className="xl:inline block text-blue-600">
